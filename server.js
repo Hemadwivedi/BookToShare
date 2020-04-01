@@ -12,8 +12,9 @@ var db = require("./models");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-app.set("view engine", "handlebars");
+// app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+// app.set("view engine", "handlebars");
+
 // for loging
 // app.use(session({ secret: "hemashirleyeti", resave: true, saveUninitialized: true }));
 // app.use(passport.initialize());
@@ -30,6 +31,7 @@ app.set("view engine", "handlebars");
 //   });
 // });
 
+//TO RUN THE APP, ON WINDOWS TYPE npx nodemon server.js
 app.listen(PORT, function() {
   console.log("Server listening on: http://localhost:" + PORT);
 });
