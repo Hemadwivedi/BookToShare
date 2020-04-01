@@ -4,4 +4,47 @@
     background-repeat: no-repeat;
     background-position: center;
     min-height: 100vh;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    color: rgb(238, 208, 108);
 }
+
+.intro-content-wrapper{
+    width: 371px;
+    max-width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.form-section{
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-wrapper-signup-text{
+    font-size: 16px;
+    padding-top: 50px;
+    width: 410px;
+    max-width: 100%;
+}
+
+p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.login-wrapper{
+    width: 410px;
+    max-width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
