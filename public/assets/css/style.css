@@ -1,3 +1,7 @@
+body{
+    font-family: 'Muli', sans-serif;
+}
+
 .intro-section{
     background-image: url("../images/bookhalf.jpg");
     background-size: cover;
@@ -48,3 +52,24 @@ p{
     margin-bottom: auto;
 }
 
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.login-wrapper .form-control{
+    min-height: 55px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 15px;
+    background-color: #f4f4f4;
+    padding: 19px 25px 18px;
+    margin-bottom: 18px;
+}
