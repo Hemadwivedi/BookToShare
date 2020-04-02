@@ -22,7 +22,6 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    /* padding: 75px 95px; */
     min-height: 100vh;
     display: flex;
     -webkit-box-orient: vertical;
@@ -128,3 +127,57 @@ p{
     margin-left: -20px;
 } */
 /*login end*/
+
+/*signup start*/
+
+.contentholder{
+    background-image: url("../images/book3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+}
+
+.signup-btn{
+    padding: 17px 40px 16px 41px;
+    border-radius: 4px;
+    background-color: goldenrod;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    line-height: 20px;
+}
+
+.signup-btn:hover{
+    color: white;
+}
+
+.signup-wrapper{
+    width: 410px;
+    max-width: 100%;
+    /* margin-top: auto;
+    margin-bottom: auto; */
+    margin: auto;
+    background-color: #fcfcfc;
+    height: 440px;
+    border-radius: 0.35em;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.25);
+    padding: 20px;
+}
+
+.signup-wrapper .form-control{
+    min-height: 55px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 15px;
+    background-color: #f4f4f4;
+    padding: 19px 25px 18px;
+    margin-bottom: 18px;
+}
+
+
+/*signupend*/
