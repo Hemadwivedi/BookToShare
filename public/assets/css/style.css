@@ -1,5 +1,20 @@
+/*login start*/
 body{
     font-family: 'Muli', sans-serif;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.container-fluid{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto; 
+    margin-left: auto;
 }
 
 .intro-section{
@@ -7,6 +22,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    /* padding: 75px 95px; */
     min-height: 100vh;
     display: flex;
     -webkit-box-orient: vertical;
@@ -40,9 +56,19 @@ body{
     max-width: 100%;
 }
 
+h1{
+    margin: 50px 50px;
+    margin-top: -20px;
+}
+
+.logotext{
+    font-size: 16px;
+}
+
 p{
     margin-top: 0;
     margin-bottom: 1rem;
+    margin-left: 50px;
 }
 
 .login-wrapper{
@@ -73,3 +99,27 @@ p{
     padding: 19px 25px 18px;
     margin-bottom: 18px;
 }
+
+.login-btn{
+    padding: 17px 40px 16px 41px;
+    border-radius: 4px;
+    background-color: goldenrod;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    line-height: 20px;
+}
+
+.login-btn:hover{
+    color: white;
+}
+
+.logologin{
+    width: 60px;
+    margin-left: 15px;
+}
+/* .intro-section-footer{
+    font-size: 12px;
+    margin-left: -20px;
+} */
+/*login end*/
