@@ -28,7 +28,7 @@ body{
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-direction: column;
-    color: rgb(238, 208, 108);
+    color: goldenrod;
 }
 
 .intro-content-wrapper{
