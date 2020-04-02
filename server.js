@@ -1,7 +1,7 @@
 //requires
 var express = require("express");
 var exphbs = require("express-handlebars");
-var passport = require("./config/passport");
+// var passport = require("./config/passport");
 
 //server port
 var app = express();
