@@ -1,5 +1,5 @@
-const db = require('../util/database');
-module.exports = class Product {
+const db = require('../config/connection');
+module.exports = class Book {
     constructor(id, title, imageUrl, description, price) {
       this.id = id;
       this.title = title;
@@ -10,7 +10,7 @@ module.exports = class Product {
   
     save() {
       return db.execute(
-        'INSERT INTO products (title, price, imageUrl, description) VALUES (?, ?, ?, ?)',
+        'INSERT INTO book (title, price, imageUrl, description) VALUES (?, ?, ?, ?)',
         [this.title, this.price, this.imageUrl, this.description]
       );
     }
@@ -18,11 +18,11 @@ module.exports = class Product {
     static deleteById(id) {}
   
     static fetchAll() {
-      return db.execute('SELECT * FROM products');
+      return db.execute('SELECT * FROM book');
     }
   
     static findById(id) {
-      return db.execute('SELECT * FROM products WHERE products.id = ?', [id]);
+      return db.execute('SELECT * FROM book WHERE book.id = ?', [id]);
     }
   };
   
