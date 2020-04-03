@@ -1,0 +1,27 @@
+    .box {
+        background-image: url("../images/librarybooks.gif");
+        background-repeat: no-repeat;
+        margin: 100px;
+        padding: 200px;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    h1 {
+        font-size: 75px;
+    }
+    
+    #button1,
+    #button2 {
+        padding: 17px 40px 16px 41px;
+        border-radius: 4px;
+        background-color: goldenrod;
+        font-size: 17px;
+        font-weight: bold;
+        color: white;
+        line-height: 20px;
+    }
+    
+    .login-btn:hover {
+        color: white;
+    }
