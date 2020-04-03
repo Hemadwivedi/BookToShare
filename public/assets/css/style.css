@@ -30,6 +30,10 @@ body{
     color: goldenrod;
 }
 
+/* .intro-title, .intro-text{
+    color: honeydew;
+} */
+
 .intro-content-wrapper{
     width: 371px;
     max-width: 100%;
@@ -46,6 +50,7 @@ body{
     -webkit-box-align: center;
     align-items: center;
     justify-content: center;
+    background-color: rgb(63, 5, 23);
 }
 
 .login-wrapper-signup-text{
@@ -92,6 +97,10 @@ p{
     clip: rect(0,0,0,0);
     white-space: nowrap;
     border: 0;
+}
+
+.login-wrapper-signup-text{
+    color: honeydew;
 }
 
 .login-wrapper .form-control{
