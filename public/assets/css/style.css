@@ -18,7 +18,7 @@ body{
 }
 
 .intro-section{
-    background-image: url("../images/bookhalf.jpg");
+    background-image: url("../images/login.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -27,14 +27,13 @@ body{
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-direction: column;
-    color: goldenrod;
 }
 
 .intro-content-wrapper{
-    width: 371px;
+    width: 500px;
     max-width: 100%;
     margin-top: auto;
-    margin-bottom: auto;
+    color:hsl(244,17,28) ;
 }
 
 .form-section{
@@ -46,7 +45,6 @@ body{
     -webkit-box-align: center;
     align-items: center;
     justify-content: center;
-    background-color: rgb(63, 5, 23);
 }
 
 .login-wrapper-signup-text{
@@ -56,9 +54,18 @@ body{
     max-width: 100%;
 }
 
+.intro-title{
+    color: rgb(63,61,86);
+}
+
 h1{
     margin: 50px 50px;
-    margin-top: -20px;
+    margin-top: -30px;
+    margin-bottom: 10px;
+}
+.intro-text{
+    margin-bottom: -10px;
+    color: rgb(63,61,86);
 }
 
 .logotext{
@@ -96,7 +103,7 @@ p{
 }
 
 .login-wrapper-signup-text{
-    color: honeydew;
+    color: rgb(63,61,86);
 }
 
 .login-wrapper .form-control{
@@ -127,16 +134,12 @@ p{
     width: 60px;
     margin-left: 15px;
 }
-/* .intro-section-footer{
-    font-size: 12px;
-    margin-left: -20px;
-} */
 /*login end*/
 
 /*signup start*/
 
 .contentholder{
-    background-image: url("../images/book3.jpg");
+    background-image: url("../images/signup1.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -183,7 +186,7 @@ p{
 }
 
 
-/*signupend*/
+/*signup end*/
 
 /*members page start*/
 
@@ -201,7 +204,7 @@ p{
 .add-btn, .browsebook-btn{
     padding: 17px 20px 16px 21px;
     border-radius: 4px;
-    background-color: rgb(230,89,92);
+    background-color: goldenrod;
     font-size: 17px;
     font-weight: bold;
     color: white;
@@ -229,7 +232,7 @@ p{
 }
 
 .createcontent{
-    background-image: url("../images/book4.jpg");
+    background-image: url("../images/upload.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -254,7 +257,7 @@ p{
 .submit-btn{
     padding: 17px 40px 16px 41px;
     border-radius: 4px;
-    background-color: goldenrod;
+    background-color: rgb(217, 165, 32);
     font-size: 17px;
     font-weight: bold;
     color: white;
@@ -268,7 +271,7 @@ p{
 
 .rules{
     margin: auto;
-    color: white;
+    color: rgb(70,69,91);
 }
 .overlay {
     position: fixed;
@@ -327,3 +330,19 @@ p{
       width: 70%;
     }
   }
+  /*create a book page end*/
+
+  /*availablebooks start*/
+  .imagesearch{
+    vertical-align: top;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.availablecontent{
+    height: 100vh;
+}
+/* .availablebooks{
+    text-align: center;
+    margin-top: 100px;
+} */
