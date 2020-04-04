@@ -1,36 +1,31 @@
-<!--Shirleys 3 page-->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <title>Passport Authentication</title>
+  <title>BookToShare</title>
+  <link rel="shortcut icon" type="image/ico" href="./images/favicon.ico">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
-  <link href="stylesheets/style.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/logout">
-        Logout
-      </a>
-    </div>
+  
+  <div class="membercontent">
+  <div class="imageandwelcome">
+    <img src="./images/welcome.png" style="width:350px; height: 300px;" class="girlreading">
+    <h3>Welcome <span class="member-name"></span>!</h3>
   </div>
-</nav>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <h2>Welcome <span class="member-name"></span></h2>
-      </div>
-    </div>
+  <div class="choices">
+    <h5>Would you like to add a book to sell or search through our library of books?</h5>
+    <input name="addbook" id="addbook" class="btn add-btn" value="Add a Book">
+    <input name="browsebook" id="browsebook" class="btn browsebook-btn"  value="Browse Library">
   </div>
+</div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/members.js"></script>
 
 </body>
-
 </html>

@@ -1,38 +1,45 @@
-<div class="container">
-		<div class="row">
-			<div class="col-md-6 offset-md-3">
-				<ul class="list-group todo-list">
-					<li class="list-group-item new-item">
-						<form method="POST" action="/main/add-book">
-                                <div class="form-group">
-                                    <label for="formGroupExampleInput">title</label>
-                                    <input type="text" class="form-control"  placeholder="Example input" name="title" >
-                                  </div>
-                                   <div class="form-group">
-                                    <label for="formGroupExampleInput">Author</label>
-                                    <input type="text" class="form-control"  placeholder="Example input" name="author" >
-                                  </div>
-                            
-                                  <div class="form-group">
-                                    <label for="formGroupExampleInput">price</label>
-                                    <input type="text" class="form-control"  placeholder="Example input" name="price"  >
-                                  </div>
-                                  <div class="form-group">
-                                    <label for="formGroupExampleInput">description</label>
-                                    <input type="text" class="form-control"  placeholder="Example input" name="description" >
-                                  </div>
-                                  <div class="form-group">
-                                    <label for="formGroupExampleInput">image</label>
-                                    <input type="text" class="form-control"  placeholder="Example input" name="image">
-                                  </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                          </form>
-					</li>
-					<span class="todo-container">
-					</span>
-				</ul>
-			</div>
-		</div>
-        	
-	</div>
-    <script src="./public/js/main.js" type="text/javascript"></script>
+<div class="createcontent">
+        <h5 class="rules">Before you submit your book, please read our <a href="#popup1">Terms and Conditions</a>!</h5>
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <ul>
+                        <li>Fill out all fields.</li>
+                        <li>Folow the format rules.</li>
+                        <li>Books that have a cover, have a better chance of being sold.</li>
+                        <li>Please, no profanities!</li>
+                        <li>Have fun and enjoy our website!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <div class="container-submit">
+        <form method="POST" action="/main/add-book" class="submitcont">
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Book Title</label>
+                    <input type="text" class="form-control"  placeholder="Enter book title" name="title" >
+                    </div>
+                    <div class="form-group">
+                    <label for="formGroupExampleInput">Author</label>
+                    <input type="text" class="form-control"  placeholder="Enter the book's author" name="author" >
+                    </div>
+            
+                    <div class="form-group">
+                    <label for="formGroupExampleInput">Price</label>
+                    <input type="number" min="5.00" max="100.00" step="0.01" class="form-control"  placeholder="5.00" name="price"  >
+                    </div>
+                    <div class="form-group">
+                    <label for="formGroupExampleInput">Description</label>
+                    <input type="text" class="form-control"  placeholder="Enter a brief description" name="description" >
+                    </div>
+                    <div class="form-group">
+                    <label for="formGroupExampleInput">Book Cover</label>
+                    <input type="text" class="form-control"  placeholder="Submit the cover URL" name="cover">
+                    </div>
+                    <input name="submit" class="btn submit-btn" value="Submit your book">
+            </form>
+			<span class="todo-container">
+			</span>
+    </div>
+</div>
