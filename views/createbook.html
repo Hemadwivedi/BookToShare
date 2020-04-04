@@ -14,7 +14,21 @@
 </head>
 <body>
     <div class="createcontent">
-        <h5 class="rules">Before you submit your book, please read our <a href="#">Terms and Conditions</a>!</h5>
+        <h5 class="rules">Before you submit your book, please read our <a href="#popup1">Terms and Conditions</a>!</h5>
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    <ul>
+                        <li>Fill out all fields.</li>
+                        <li>Folow the format rules.</li>
+                        <li>Books that have a cover, have a better chance of being sold.</li>
+                        <li>Please, no profanities!</li>
+                        <li>Have fun and enjoy your website!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     <div class="container-submit">
         <form method="POST" action="/main/add-book" class="submitcont">
                 <div class="form-group">
