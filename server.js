@@ -1,32 +1,43 @@
-//requires
-var path=require('path');
-var express = require("express");
-var session = require("express-session");
-// var exphbs = require("express-handlebars");
-var passport = require("./config/passport");
 
-//server port
-var app = express();
-var PORT = process.env.PORT || 8080;
-var db = require("./models");
+const path=require('path');
+const express=require('express');
 
-//the express app and everything that the app will use
-app.use(express.urlencoded({ extended: true }));
+const app=express();
+
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.urlencoded({extended:true}));
 app.use(express.json());
-app.use(express.static("./public/assets"));
-// app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-// app.set("view engine", "handlebars");
+
+//handlebar configuration
+const hbs=require('express-handlebars');
+
+app.engine('handlebars',hbs({ defaultLayout:'main',layoutsDir: __dirname+'/views/layout/' }));
+app.set('views',path.join(__dirname,'views'))
+app.set('view engine',"handlebars");
+
 
 // for loging
+const passport = require("./config/passport");
+const session = require("express-session");
 app.use(session({ secret: "hemashirleyeti", resave: true, saveUninitialized: true }));
 app.use(passport.initialize());
 app.use(passport.session());
 
-// // Requiring our routes
-require("./routes/html-routes.js")(app);
-require("./routes/api-routes.js")(app);
+//routing
+require("./routes/html-routes")(app);
+const  loginRouts = require("./routes/login-routes");
+const  bookRoutes = require("./routes/book-routes");
+const  userRoutes = require("./routes/user-routes");
 
-//listening port
+app.use(loginRouts);
+app.use('/api/user', userRoutes);
+app.use('/api/book', bookRoutes);
+
+//Server start
+const PORT = process.env.PORT || 8080;
+
+var db = require("./models");
+
 db.sequelize.sync().then(function() {
   app.listen(PORT, function() {
     console.log("==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.", PORT, PORT);

@@ -1,5 +1,5 @@
-const Book = require('../models/book');
-exports.getAddBook = (req, res, next) => {
+var db = require("../models");
+exports.getAddBook = (req, res) => {
     //here add route
     res.render('route', {
         pageTitle: 'Add Product',
@@ -7,23 +7,23 @@ exports.getAddBook = (req, res, next) => {
         editing: false
     });
 };
-exports.postAddBook = (req, res, next) => {
+exports.postAddBook = (req, res) => {
     const title = req.body.title;
     const imageUrl = req.body.image;
     const price = req.body.price;
     const description = req.body.description;
     const author = req.body.author;
-    const book ={
-        title : title,
-        imageUrl : imageUrl,
-        price : price,
-        description : description,
-        author : author
+    const book = {
+        title: title,
+        imageUrl: imageUrl,
+        price: price,
+        description: description,
+        author: author
     };
-    Book.create(book)
+    db.Book.create(book)
         .then(result => {
-        console.log(result);
-    }).catch(err => {
+            console.log(result);
+        }).catch(err => {
         console.log(err);
     })
 
@@ -35,7 +35,7 @@ exports.getEditBook = (req, res, next) => {
         return res.redirect('/');
     }
     const prodId = req.params.productId;
-    Book.findById(prodId, product => {
+    db.Book.findById(prodId, product => {
         if (!product) {
             return res.redirect('/');
 //page reder setup
@@ -70,7 +70,7 @@ exports.postEditBook = (req, res, next) => {
 };
 
 exports.getBook = (req, res, next) => {
-    Book.fetchAll(products => {
+    db.Book.fetchAll(products => {
         res.render('setupPath', {
             prods: products,
             pageTitle: 'Admin Products',
@@ -81,7 +81,7 @@ exports.getBook = (req, res, next) => {
 
 exports.postDeletebook = (req, res, next) => {
     const prodId = req.body.productId;
-    Book.deleteById(prodId);
+    db.Book.deleteById(prodId);
     res.redirect('setupPath');
 };
   

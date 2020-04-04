@@ -1,8 +1,8 @@
 {
     "development": {
       "username": "root",
-      "password": "Netisedavam7",
-      "database": "logsign_db",
+      "password": "password",
+      "database": "book_db",
       "host": "127.0.0.1",
       "dialect": "mysql"
     },
