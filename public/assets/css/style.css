@@ -333,7 +333,7 @@ p{
   /*create a book page end*/
 
   /*availablebooks start*/
-  .imagesearch{
+  .imagebrowse, .imagesearch{
     vertical-align: top;
     text-align: center;
     margin-left: auto;
@@ -346,3 +346,11 @@ p{
     text-align: center;
     margin-top: 100px;
 } */
+
+.linktoapi{
+    text-align: center;
+}
+
+/*availablebooks end*/
+
+/*apibooks start*/
