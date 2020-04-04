@@ -186,3 +186,31 @@ p{
 
 
 /*signupend*/
+
+/*members page start*/
+
+.imageandwelcome{
+    vertical-align: top;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.choices{
+    text-align: center;
+    margin-top: 100px;
+}
+.add-btn, .browsebook-btn{
+    padding: 17px 20px 16px 21px;
+    border-radius: 4px;
+    background-color: rgb(230,89,92);
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    line-height: 20px;
+    margin-top: 50px;
+}
+
+.add-btn:hover, .browsebook-btn:hover{
+    color: white;
+}
