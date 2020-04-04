@@ -12,7 +12,7 @@ app.use(express.json());
 const hbs=require('express-handlebars');
 
 app.engine('handlebars',hbs({ defaultLayout:'main',layoutsDir: __dirname+'/views/layout/' }));
-app.set('views',path.join(__dirname,'views'))
+app.set('views',path.join(__dirname,'views'));
 app.set('view engine',"handlebars");
 
 
