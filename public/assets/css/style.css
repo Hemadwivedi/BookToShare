@@ -213,4 +213,8 @@ p{
 
 .add-btn:hover, .browsebook-btn:hover{
     color: white;
+    margin-top: 50px;
+}
+.membercontent{
+    height: 100vh;
 }
