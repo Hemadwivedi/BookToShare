@@ -4,7 +4,6 @@ const passport = require('../config/passport')
 const router = express.Router();
 
 router.post("/api/login", passport.authenticate("local"), function (req, res) {
-    console.log("Hellooo....")
     res.render("home");
 });
 
