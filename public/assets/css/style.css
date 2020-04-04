@@ -164,8 +164,6 @@ p{
 .signup-wrapper{
     width: 410px;
     max-width: 100%;
-    /* margin-top: auto;
-    margin-bottom: auto; */
     margin: auto;
     background-color: #fcfcfc;
     height: 440px;
@@ -217,4 +215,58 @@ p{
 }
 .membercontent{
     height: 100vh;
+}
+
+/*members page end*/
+
+/*createbook page start*/
+.container-submit{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto; 
+    margin-left: auto;
+}
+
+.createcontent{
+    background-image: url("../images/book4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+}
+
+.container-submit{
+    width: 700px;
+    max-width: 100%;
+    margin: auto;
+    background-color: #fcfcfc;
+    height: 530px;
+    border-radius: 0.35em;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.25);
+    padding: 20px;
+}
+
+.submit-btn{
+    padding: 17px 40px 16px 41px;
+    border-radius: 4px;
+    background-color: goldenrod;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    line-height: 20px; 
+    
+}
+
+.submit-btn:hover{
+    color: white;
+}
+
+.rules{
+    margin: auto;
+    color: white;
 }
