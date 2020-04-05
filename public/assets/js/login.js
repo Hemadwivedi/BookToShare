@@ -5,7 +5,7 @@ $(function () {
 
     loginForm.on("submit", function (event) {
         event.preventDefault();
-        var userData = {
+        const userData = {
             username: usernameInput.val().trim(),
             password: passwordInput.val().trim()
         };
