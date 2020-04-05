@@ -335,26 +335,97 @@ p{
   }
   /*create a book page end*/
 
-  /*availablebooks start*/
+  /*search-book start*/
   .imagebrowse, .imagesearch{
     vertical-align: top;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
-.availablecontent{
-    height: 100vh;
+
+.btn-search1{
+    padding: 17px 40px 16px 41px;
+    border-radius: 4px;
+    background-color: rgb(217, 165, 32);
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    line-height: 20px; 
+    position:relative;
+	left:50px;
 }
-/* .availablebooks{
-    text-align: center;
-    margin-top: 100px;
-} */
+
+.btn-search1:hover{
+    color: white;
+}
+
+.btn-block{
+    padding: 17px 40px 16px 41px;
+    border-radius: 4px;
+    background-color: rgb(217, 165, 32);
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    line-height: 20px; 
+	left:50px;
+}
+
+.btn-block:hover{
+    color: white;
+}
 
 .linktoapi{
     text-align: center;
 }
 
-/*availablebooks end*/
+.allbooksdisplayed{
+   align-items: center;
+   width: 100vw;
+   height: 500px;
+   margin-top: 50px;
+   align-items: center;
+   margin-left: 60px;
+   white-space: nowrap;
+}
+
+#search-bar{
+    min-height: 55px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 15px;
+    background-color: #f4f4f4;
+    padding: 19px 25px 18px;
+    margin-bottom: 18px;
+    width: 400px;
+    margin-left: auto;
+}
+
+.card{
+    width: 200px;
+    position: relative;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 90px;
+    word-wrap: break-word;
+}
+
+.card-body{
+    width: 200px;
+}
+
+.card-img-top{
+    width: 200px;
+}
+
+.card-title{
+   font-size: 14px;
+   font-weight: bold;
+}
+
+.card-text{
+    font-size: 12px;
+}
+/*search-book end*/
 
 /*apibooks start*/
 #search-box{
