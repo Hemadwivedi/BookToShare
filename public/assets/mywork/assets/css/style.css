@@ -7,6 +7,19 @@
         background-position: center;
     }
     
+    .raise-modal {
+        position: relative;
+        top: -89%;
+        /* display: block; */
+        border: solid red;
+        width: 46%;
+        margin: auto;
+    }
+    
+    .hidden {
+        display: none
+    }
+    
     h1 {
         font-size: 6vw;
         text-transform: uppercase;
@@ -14,18 +27,33 @@
         margin-bottom: 15px;
     }
     
-    #button1,
-    #button2 {
-        padding: 17px 35px 16px 41px;
+    #addbtn {
+        padding: 10px 25px 10px 20px;
         border-radius: 1px;
         background-color: goldenrod;
-        font-size: 13px;
+        font-size: 15.5px;
         font-weight: bold;
         color: white;
         line-height: 20px;
+        font-family: 'Muli', sans-serif;
     }
     
-    .login-btn:hover {
+    #searchbtn {
+        padding: 10px 25px 10px 20px;
+        border-radius: 1px;
+        background-color: goldenrod;
+        font-size: 15.5px;
+        font-weight: bold;
+        color: white;
+        line-height: 20px;
+        font-family: 'Muli', sans-serif;
+    }
+    
+    #addbtn:hover {
+        color: white;
+    }
+    
+    #searchbtn:hover {
         color: white;
     }
     
@@ -34,7 +62,8 @@
         margin: 0;
         height: 100%;
         text-align: center;
-        font-family: 'Oxygen Mono', monospace;
+        font-family: 'Muli', sans-serif;
+        ;
         color: #999;
     }
     
@@ -50,7 +79,7 @@
         vertical-align: middle;
     }
     
-    .modal-bg {
+    .modalbg {
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -65,14 +94,9 @@
         transition: visibility 0s, opacity 0.5s;
     }
     
-    .bg-active {
-        visibility: visible;
-        opacity: 1;
-    }
-    
     .modal {
+        position: relative;
         background-color: white;
-        width: 30%;
         height: 30%;
         display: flex;
         justify-content: space-around;
@@ -85,5 +109,14 @@
         background-color: goldenrod;
         color: white;
         border: none;
-        font-family: 'Oxygen Mono', monospace;
+        font-family: 'Muli', sans-serif;
+        ;
+    }
+    
+    .modal-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-weight: bold;
+        cursor: pointer;
     }

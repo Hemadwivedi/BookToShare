@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <title>Welcome Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css\style.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
 </head>
 
@@ -15,15 +19,36 @@
             <div id="centeralign">
                 <h1>Welcome </h1>
 
-                <button type="button add-button" id="button1"><a href="addbook.html" alt='addbook'></a>Add Book</button>
-                <button type="button search-button" id="button2"><a href="search.html" alt='searchlibrary'></a>Search Library</button>
+                <input type="addbtn" id="addbtn" class="form-control" placeholder="Add Book">
+                <input type="searchbtn" id="searchbtn" class="form-control" placeholder="Search Book">
+
 
             </div>
         </div>
     </div>
+    <div class="modalBg hidden raise-modal">
+        <div class="modal">
+            <h2>Please enter information</h2>
+            <label for="category">Category</label>
+            <input id="category" type="text" category="category">
+            <label for="title">Title of Book</label>
+            <input id="title" type="text" title="title">
+            <label for="author">Author</label>
+            <input id="author" type="text" author="author">
+            <label for="price">Price</label>
+            <input id="price" type="text" author="price">
+            <!-- <label for="bookimage">Upload Book Poster</label>
+            <input id = "bookimage" type="image" image="url"> -->
 
+            <button id="submit">Submit</button>
+            <span class="modalclose">X</span>
+
+        </div>
+
+    </div>
+    <script src="modal.js"></script>
+    <script src="script.js"></script>
 
 </body>
-<script src="script.js"></script>
 
 </html>
