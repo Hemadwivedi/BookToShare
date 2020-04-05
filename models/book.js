@@ -11,14 +11,15 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.DOUBLE,
             allowNull: false
         },
-        imageUrl: {
+        jpegImg: {
             type: DataTypes.STRING,
             allowNull: false
         },
         description: {
             type: DataTypes.STRING,
             allowNull: false
-        }
+        },
+        author:DataTypes.STRING
     });
     return Book;
 };

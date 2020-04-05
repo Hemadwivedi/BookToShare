@@ -1,0 +1,17 @@
+
+<div class="input-group mb-3">
+    <input class="form-control" type="text" placeholder="Find By Name...">
+    <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button">Search</button>
+    </div>
+</div>
+{{#each books}}
+        <div class="card">
+            <img class="card-img-top" src="{{jpegImg}}" alt="">
+            <div class="card-body">
+                <h4 class="card-title">{{title}}</h4>
+                <p class="card-text">{{description}}</p>
+                <a class="btn btn-success btn-block" href="#">buy</a>
+            </div>
+        </div>
+{{/each}}
