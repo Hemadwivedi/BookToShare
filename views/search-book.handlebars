@@ -2,18 +2,12 @@
 <div class="imagebrowse">
         <img src="/assets/images/browse.png" style="width:350px; height: 300px;" class="girlreading">
     </div>
-{{!-- <div class="input-group mb-3">
-    <input class="form-control" type="text" placeholder="Find By Name..." id="search-bar">
-    <div class="input-group-append">
-        <button class="btn btn-outline-secondary" type="button">Search</button>
-    </div>
-</div> --}}
 <div id="search">
     <form id="myform">
         <div class="input-field">
-            <input type="search" id="search-box" class="form-control" placeholder="Find By Title" aria-describedby="button-addon2">
+            
         </div>
-        <button class="btn btn-search1" type="button" id="search-btn">Search</button>
+        <button class="btn btn-search1" type="button" id="search-btn"> Add Another Book</button>
     </form>
   </div>
   <div class="allbooksdisplayed">
@@ -26,6 +20,7 @@
                 <h4 class="card-title">{{title}}</h4>
                 <p class="card-text">{{description}}</p>
                 <a class="btn btn-block" href="#">Buy</a>
+                <a class="btn btn-block" href="#">Edit</a>
             </div>
         </div>   
     </div> 
@@ -34,3 +29,4 @@
 </div>
 {{!-- <h5 class="linktoapi">Didn't find the book you were looking for? We got you! <a href="/search-apibook">Click me!</a></h5> --}}
 </div>
+
