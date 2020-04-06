@@ -27,7 +27,7 @@ module.exports = function (app) {
     });
 
     app.get("/browse-book", isAuthenticated, function (req, res) {
-        res.render("browse-book");
+        res.redirect("/api/book/search");
     });
     app.get("/search-apibook", isAuthenticated, function (req, res) {
         res.render("search-apibook");
