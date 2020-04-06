@@ -436,9 +436,14 @@ p{
    font-weight: bold;
 }
 
+.price-text{
+    margin-left: 0px;
+}
+
 .card-text{
-    font-size: 12px;
+    font-size: 11px;
     padding-bottom: 10px;
+    margin-left: 0px;
 }
 /*search-book end*/
 
