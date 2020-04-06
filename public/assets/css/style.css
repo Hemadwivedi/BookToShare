@@ -254,7 +254,7 @@ p{
     padding: 20px;
 }
 
-.submit-btn, .btn-default, .btn-delete{
+.submit-btn, .btn-default{
     padding: 17px 40px 16px 41px;
     border-radius: 4px;
     background-color: rgb(217, 165, 32);
@@ -262,7 +262,16 @@ p{
     font-weight: bold;
     color: white;
     line-height: 20px; 
-    
+}
+
+.btn-delete{
+    padding: 17px 20px 16px 20px;
+    border-radius: 4px;
+    background-color: rgb(217, 165, 32);
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    line-height: 20px; 
 }
 .btn-delete:hover{
     color: white;
@@ -479,7 +488,7 @@ p{
 /*userpage start*/
 
 .user-wrapper{
-    width: 300px;
+    width: 200px;
     max-width: 100%;
     margin-top: auto;
     margin-bottom: auto;
@@ -488,4 +497,20 @@ p{
     border-radius: 0.35em;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.25);
     padding: 20px;
+    position: relative;
+    float: left;
+    margin-bottom: 90px;
+    margin-right: 50px;
+    word-wrap: break-word;
+    min-height: 320px;
+    max-height: 450px;
 }
+.allusersdisplayed{
+    align-items: center;
+    width: 100vw;
+    height: 500px;
+    margin-top: 50px;
+    align-items: center;
+    margin-left: 60px;
+    white-space: nowrap;
+ }
