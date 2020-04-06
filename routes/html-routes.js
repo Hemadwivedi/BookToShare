@@ -32,6 +32,7 @@ module.exports = function (app) {
     app.get("/search-apibook", isAuthenticated, function (req, res) {
         res.render("search-apibook");
     });
+
     app.get("/search-apibook/:search", function (req, res) {
         axios.get(`https://www.googleapis.com/books/v1/volumes?q=${req.params.search}`)
         .then(function(res){
