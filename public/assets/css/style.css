@@ -330,7 +330,7 @@ p{
     color: #333;
   }
   .popup .close:hover {
-    color: #06D85F;
+    color: goldenrod;
   }
   .popup .content {
     max-height: 30%;
@@ -519,3 +519,31 @@ p{
     margin-left: 60px;
     white-space: nowrap;
  }
+
+.nav-link, .cart-contents{
+    color: rgb(70,69,91);
+    padding-right: 30px;
+    padding-left: 30px;
+    text-align: center;
+    border-radius: 4px;
+   
+}
+
+.nav-link:hover{
+    color: rgb(70,69,91);
+    background-color: goldenrod;
+    transition: ease-in;
+    transition: .9s;
+    border-radius: 4px;
+}
+
+.cart-contents:hover{
+    color: goldenrod;
+    transition: ease-in;
+    transition: .6s;
+}
+
+.nav{
+    padding: 20px;
+    transition: .5s;
+}
