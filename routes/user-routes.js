@@ -5,7 +5,7 @@ const userController = require('../controller/userController');
 const isAuthenticated = require("../config/middleware/isAuthenticated");
 
 router.get('/search', isAuthenticated, userController.getAllUsers);
-router.post('/create', isAuthenticated, userController.createUser);
+router.post('/create', userController.createUser);
 
 router.get('/:userId', isAuthenticated, userController.getUserById);
 router.post('/:userId', isAuthenticated, userController.editUser);
