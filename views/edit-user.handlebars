@@ -1,22 +1,22 @@
 <div class="contentholder">
     <div class="signup-wrapper">
 
-        <form class="signup" method="post" action="/api/user/create">
+        <form class="signup" method="post" action="/api/user/{{user.id}}">
             <div class="form-group">
                 <label for="firstname" class="sr-only"></label>
-                <input type="firstname" name="firstname" id="firstname" class="form-control" placeholder="First Name">
+                <input type="firstname" name="firstname" id="firstname" class="form-control" placeholder="First Name" value="{{user.firstname}}">
             </div>
             <div class="form-group">
                 <label for="lastname" class="sr-only"></label>
-                <input type="lastname" name="lastname" id="lastname" class="form-control" placeholder="Last Name">
+                <input type="lastname" name="lastname" id="lastname" class="form-control" placeholder="Last Name" value="{{user.lastname}}">
             </div>
             <div class="form-group">
                 <label for="username" class="sr-only"></label>
-                <input type="username" name="username" id="username" class="form-control" placeholder="Username">
+                <input type="username" name="username" id="username" class="form-control" placeholder="Username" value="{{user.username}}">
             </div>
             <div class="form-group mb-3">
                 <label for="password" class="sr-only"></label>
-                <input type="password" name="password" id="password" class="form-control" placeholder="Password">
+                <input type="password" name="password" id="password" class="form-control" placeholder="Password" value="{{user.password}}">
             </div>
             <div style="display: none" id="alert" class="alert alert-danger" role="alert">
                 <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>

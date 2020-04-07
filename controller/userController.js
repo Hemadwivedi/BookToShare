@@ -50,6 +50,17 @@ exports.editUser = (req, res, next) => {
 
     db.User.update(user, selector)
         .then(function (rowsUpdated) {
-            res.redirect('/api/user/updateUser');
+            res.redirect('/api/user/search');
         }).catch(next);
 };
+exports.deleteUser=(req,res,next)=>{
+    const selector={
+        where: {id: req.params.userId}
+    };
+    db.User.destroy(selector).then(function(rowsUpdated){
+
+        res.json(rowsUpdated);
+    }).catch(next);
+
+
+}

@@ -1,12 +1,14 @@
 var db = require("../models");
 
 exports.createBook = (req, res, next) => {
+
     db.Book.create({
         title: req.body.title,
         author: req.body.author,
         price: req.body.price,
         description: req.body.description,
-        jpegImg: req.body.jpegImg
+        jpegImg: req.body.jpegImg,
+        UserId: req.user.id
     }).then(function () {
         res.redirect('/api/book/search');
     })
@@ -15,8 +17,21 @@ exports.createBook = (req, res, next) => {
 exports.searchBook = (req, res, next) => {
     db.Book.findAll()
         .then(function (books) {
-            const booksData = books.map(book => book.dataValues);
-            res.render("search-book", {books: booksData});
+            db.User.findByPk(req.user.id)
+                .then(user =>
+                    user.getCart()
+                        .then(cart => cart.getBooks())
+                        .then(cartBooks => cartBooks.map(b => b.id))
+                        .then(booksIdInCart => books.filter(book => !booksIdInCart.includes(book.id)))
+                ).then(filterBook => {
+                const booksData = filterBook.map(book => book.dataValues)
+                    .map(booksData => {
+                        booksData.isNotOwn = !(booksData.UserId === req.user.id);
+                        return booksData;
+                    });
+                res.render("search-book", {books: booksData});
+            });
+
         });
 };
 
