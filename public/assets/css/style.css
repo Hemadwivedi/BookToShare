@@ -388,6 +388,7 @@ p{
 
 .linktoapi{
     text-align: center;
+    padding-top: 20px;
 }
 
 .allbooksdisplayed{
@@ -540,10 +541,9 @@ p{
 .cart-contents:hover{
     color: goldenrod;
     transition: ease-in;
-    transition: .6s;
+    transition: .4s;
 }
 
 .nav{
     padding: 20px;
-    transition: .5s;
 }
