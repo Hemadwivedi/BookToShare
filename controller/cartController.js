@@ -4,7 +4,10 @@ exports.getCart = (req, res, next) => {
     db.User.findByPk(req.user.id)
         .then(user => user.getCart())
         .then(cart => cart.getBooks())
-        .then(books => res.json(books));
+        .then(books => {
+            const booksData = books.map(book => book.dataValues)
+            res.render("cart", {books: booksData})
+        });
 };
 
 exports.addToCart = (req, res, next) => {
