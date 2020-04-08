@@ -598,3 +598,9 @@ p{
     color: goldenrod;
     transition: .6s;
 }
+
+.adminlogin{
+    font-size: 12px;
+    width: 410px;
+    max-width: 100%;
+}
