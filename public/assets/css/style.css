@@ -1,6 +1,7 @@
 /*login start*/
 body{
     font-family: 'Muli', sans-serif;
+    color:  rgb(70,69,91);
 }
 
 .row{
@@ -330,7 +331,7 @@ p{
     color: #333;
   }
   .popup .close:hover {
-    color: #06D85F;
+    color: goldenrod;
   }
   .popup .content {
     max-height: 30%;
@@ -367,6 +368,26 @@ p{
 	left:10px;
 }
 
+.checkout-btn{
+    padding: 17px 40px 16px 41px;
+    border-radius: 4px;
+    background-color: rgb(217, 165, 32);
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    line-height: 20px; 
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.checkoutbtndiv{
+    text-align: center;
+}
+
+.checkout-btn:hover{
+    color: white;
+}
+
 .btn-search1:hover{
     color: white;
 }
@@ -388,6 +409,7 @@ p{
 
 .linktoapi{
     text-align: center;
+    padding-top: 20px;
 }
 
 .allbooksdisplayed{
@@ -519,3 +541,30 @@ p{
     margin-left: 60px;
     white-space: nowrap;
  }
+
+.nav-link, .cart-contents{
+    color: rgb(70,69,91);
+    padding-right: 30px;
+    padding-left: 30px;
+    text-align: center;
+    border-radius: 4px;
+   
+}
+
+.nav-link:hover{
+    color: rgb(70,69,91);
+    background-color: goldenrod;
+    transition: ease-in;
+    transition: .9s;
+    border-radius: 4px;
+}
+
+.cart-contents:hover{
+    color: goldenrod;
+    transition: ease-in;
+    transition: .4s;
+}
+
+.nav{
+    padding: 20px;
+}
