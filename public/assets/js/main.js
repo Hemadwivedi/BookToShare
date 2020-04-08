@@ -18,4 +18,5 @@ $(function () {
     $("#cart").on("click", (event) => {
         window.location.pathname = "/api/cart/";
     });
+    
 });

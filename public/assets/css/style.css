@@ -265,6 +265,10 @@ p{
     line-height: 20px; 
 }
 
+#deletefromcart{
+    width: 200px;
+}
+
 .btn-delete{
     padding: 17px 20px 16px 20px;
     border-radius: 4px;
@@ -445,6 +449,15 @@ p{
     max-height: 450px;
 }
 
+.welcometext, .member-name{
+    color: rgb(70,69,91)
+}
+
+.yourcart{
+    padding-bottom: 10px;
+    color: rgb(70,69,91);
+}
+
 .card-body{
     width: 200px;
 }
@@ -542,34 +555,46 @@ p{
     white-space: nowrap;
  }
 
-.nav-link, .cart-contents{
-    color: rgb(70,69,91);
-    padding-right: 30px;
-    padding-left: 30px;
-    text-align: center;
-    border-radius: 4px;
-   
+.navbar{
+    width: 100%;
+    padding-right: 10px;
+    top: 0px;
+    transition: .5s;
+    text-align: right;
+    margin-bottom: 0px;
 }
 
-.nav-link:hover{
-    color: rgb(70,69,91);
-    background-color: goldenrod;
-    transition: ease-in;
-    transition: .9s;
+.navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
     border-radius: 4px;
+    transition: .6s;
+}
+
+#profile:hover{
+   background: goldenrod; 
+}
+
+#home:hover{
+    background: goldenrod; 
+ }
+
+ #library:hover{
+    background: goldenrod; 
+ }
+
+ #logOut:hover{
+    background: goldenrod; 
+ }
+
+.cart-contents{
+    color: rgb(70,69,91);
 }
 
 .cart-contents:hover{
     color: goldenrod;
-    transition: ease-in;
-    transition: .4s;
-}
-
-#deletefromcart{
-    text-align: center;
-    width: 200px;
-}
-
-.nav{
-    padding: 20px;
+    transition: .6s;
 }
