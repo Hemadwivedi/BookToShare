@@ -565,6 +565,11 @@ p{
     transition: .4s;
 }
 
+#deletefromcart{
+    text-align: center;
+    width: 200px;
+}
+
 .nav{
     padding: 20px;
 }
