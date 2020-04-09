@@ -3,6 +3,9 @@
         <img src="../../assets/images/payus.png" style="width:350px; height: 300px;" class="girlreading">
         <h2 class="yourcart"> Your Cart! </h2>
     </div>
+    <div class="checkoutbtndiv">
+        <input id="checkout" class="btn checkout-btn" value="Checkout">
+    </div>
 
     <div class="allbooksdisplayed">
                 {{#each books}}
@@ -15,14 +18,12 @@
                                 <p class="card-text">{{description}}</p>
                                 <p class="price-text">Price: {{price}}</p>
                                 <label id="bookId" class="hidden">{{id}}</label>
-                                <a class="btn btn-block" id="deleteFromCart">Delete From Cart</a>
+                                <input name="delete"  id="deletefromcart" class="btn submit-btn" value="REMOVE">
                             </div>
                         </div>
                     </div>
 
                 {{/each}}
             </div>
-    <div class="checkoutbtndiv">
-        <input id="checkout" class="btn checkout-btn" value="Checkout">
-    </div>
+    
 </div>
