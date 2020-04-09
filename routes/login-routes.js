@@ -13,4 +13,8 @@ router.get("/api/logout", function (req, res) {
 });
 
 module.exports = router;
+//https://www.googleapis.com/books/v1/volumes?q=war%20and%20peace
 
+//https://www.googleapis.com/books/v1/volumes?q=search+terms
+//AIzaSyDkhK1BjspVqapL0ukGSs6Pi512kuscCJc
+//https://www.googleapis.com/books/v1/volumes?q=flowers+inauthor:keyes&key=AIzaSyDkhK1BjspVqapL0ukGSs6Pi512kuscCJc

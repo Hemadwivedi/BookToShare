@@ -33,10 +33,10 @@ module.exports = function (app) {
         res.render("search-apibook");
     });
 
-    app.get("/search-apibook/:search", function (req, res) {
+    app.get("/search-apibook/:search", isAuthenticated , function (req, res) {
         axios.get(`https://www.googleapis.com/books/v1/volumes?q=${req.params.search}`)
-        .then(function(res){
-            console.log(res.data.items)//7-11
+        .then(function(result){
+            res.render("search-apibook" , {books : result.data.items });
         })
       });
 };

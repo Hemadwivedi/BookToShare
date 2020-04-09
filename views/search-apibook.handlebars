@@ -11,6 +11,24 @@
     </form>
   </div>
   <div class="results">
-      <!--results-->
+      <div class="allbooksdisplayed">
+          {{#each books}}
+
+              <div class="card-deck" id="{{id}}">
+                  <div class="card">
+                      <img class="card-img-top" src="{{volumeInfo.imageLinks.thumbnail}}" alt="">
+                      <div class="card-body">
+                          <h4 class="card-title">{{volumeInfo.title}}</h4>
+                          <p class="card-text">By: {{volumeInfo.author}}</p>
+                          <p class="price-text">Price: {{saleInfo.listPrice.amount}}</p>
+                          <a class="btn btn-block addToCart" href="{{saleInfo.buyLink}}">Buy</a>
+                      </div>
+                  </div>
+              </div>
+
+          {{/each}}
+      </div>
   </div>
 </div>
+
+<script src="../../assets/js/apibooks.js" type="text/javascript"></script>
