@@ -9,4 +9,6 @@ router.post('/add/:bookId', isAuthenticated, cartController.addToCart);
 
 router.get('/', isAuthenticated, cartController.getCart);
 
+router.delete('/:bookId', isAuthenticated, cartController.delete);
+
 module.exports = router;

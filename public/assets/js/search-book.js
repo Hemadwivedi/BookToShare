@@ -3,14 +3,16 @@ $(function () {
         window.location.pathname = `/add-book`
     });
 
-    $("#editBook").on("click", (event) => {
-        const bookID = $("#bookId").html().trim();
-        window.location.pathname = `../api/book/` + bookID;
+    $(".editBook").on("click", (event) => {
+        event.preventDefault();
+        const bookId = event.currentTarget.dataset.id;
+        window.location.pathname = `../api/book/` + bookId;
     });
 
-    $("#addToCart").on("click", (event) => {
-        const bookID = $("#bookId").html().trim();
-        const url = `/api/cart/add/` + bookID;
+    $(".addToCart").on("click", (event) => {
+        event.preventDefault();
+        const bookId = event.currentTarget.dataset.id;
+        const url = `/api/cart/add/` + bookId;
 
         $.post(url)
             .then(function () {

@@ -17,13 +17,13 @@
                                 <p class="card-text">By: {{author}}</p>
                                 <p class="card-text">{{description}}</p>
                                 <p class="price-text">Price: {{price}}</p>
-                                <label id="bookId" class="hidden">{{id}}</label>
-                                <input name="delete"  id="deletefromcart" class="btn submit-btn" value="REMOVE">
+                                <input name="delete" class="btn submit-btn deleteFromCart" data-id="{{id}}" value="REMOVE">
                             </div>
                         </div>
                     </div>
 
                 {{/each}}
             </div>
-    
+
 </div>
+<script src="/assets/js/cart.js" type="text/javascript"></script>
