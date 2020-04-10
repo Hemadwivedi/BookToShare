@@ -12,6 +12,9 @@
     "type": "git",
     "url": "git+https://github.com/Hemadwivedi/BookToShare.git"
   },
+  "engines": {
+    "node": "13.9.x"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
